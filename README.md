@@ -47,29 +47,6 @@ Unauthorized role access returns a `403 Forbidden` response.
 - Stream tracks filtered by **artist** or **genre**
 - Role-verified access on all streaming routes
 
----
-
-## Project Structure
-
-```
-streamvault/
-├── controllers/
-│   ├── authController.js       # Register & login logic
-│   ├── trackController.js      # Upload, browse, stream
-├── middleware/
-│   ├── authMiddleware.js       # JWT verification
-│   └── roleMiddleware.js       # RBAC enforcement
-├── models/
-│   ├── User.js                 # User & Artist schema
-│   └── Track.js                # Track + metadata schema
-├── routes/
-│   ├── authRoutes.js
-│   ├── artistRoutes.js         # Artist-only routes
-│   └── userRoutes.js           # User-facing routes
-├── .env
-├── server.js
-└── package.json
-```
 
 ---
 
